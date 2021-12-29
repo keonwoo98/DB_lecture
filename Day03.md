@@ -13,7 +13,7 @@
 	* 형식 : `SELECT 데이터`
 	* **예제 :**
 		```SQL
-		SELECT 123;			-- 결과 : 123
+		SELECT 123;		-- 결과 : 123
 		SELECT 1 + 2 + 3;	-- 결과 : 6
 		SELECT "ABC"		-- 결과 : "ABC"
 		```
