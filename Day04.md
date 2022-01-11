@@ -13,7 +13,7 @@
 ```SQL
 SELECT [컬럼 이름]
 FROM [테이블 이름]
-WHERE 조건식;
+WHERE [조건식];
 ```
 
 ## **2. 조건식**
@@ -58,7 +58,7 @@ WHERE speed > 50;
 **`!=` 연산자 예시**
 
 ```SQL
-SELCET name
+SELECT name
 FROM mypokemon
 WHERE type != 'electric';
 ```
