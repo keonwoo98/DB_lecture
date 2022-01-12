@@ -8,13 +8,13 @@
 **`ORDER BY`**
 * 가져온 데이터를 정렬해주는 키워드
 * 형식 : `ORDER BY [컬럼 이름]`
-* 입력한 [컬럼 이름]의 값을 기준으로 모든 row 정렬
+* 입력한 [컬럼 이름]의 값을 기준으로 모든 로우 정렬
 * 기본 정렬 규칙은 오름차순
 	* `ORDER BY [컬럼 이름]` = `ORDER BY [컬럼 이름] ASC`
 * 내림차순 정렬
 	* `ORDER BY [컬럼 이름] DESC`
 * 여러 컬럼으로 정렬 시엔, [컬럼 이름]을 복수 개로 입력
-	* `ORDER BY [컬럼 1], [컬럼 2]`는 [컬럼 1] 기준으로 정렬 후 동일한 row 간에 [컬럼 2] 기준으로 정렬
+	* `ORDER BY [컬럼 1], [컬럼 2]`는 [컬럼 1] 기준으로 정렬 후 동일한 로우 간에 [컬럼 2] 기준으로 정렬
 * 컬럼 번호로도 정렬 가능
 	* 컬럼 번호는 `SELECT`절의 컬럼 이름의 순서를 의미
 
@@ -24,7 +24,7 @@
 ```SQL
 SELECT [컬럼 이름]
 FROM [테이블 이름]
-WHERE [조건식]
+WHERE 조건식
 ORDER BY [컬럼 이름] ASC(생략 가능);
 ```
 
@@ -33,7 +33,7 @@ ORDER BY [컬럼 이름] ASC(생략 가능);
 ```SQL
 SELECT [컬럼 이름]
 FROM [테이블 이름]
-WHERE [조건식]
+WHERE 조건식
 ORDER BY [컬럼 이름] DESC;
 ```
 
@@ -42,7 +42,7 @@ ORDER BY [컬럼 이름] DESC;
 ```SQL
 SELECT [컬럼 1], [컬럼 2], [컬럼 3], [컬럼 4]
 FROM [테이블 이름]
-WHERE [조건식]
+WHERE 조건식
 ORDER BY 3 DESC, 4;
 ```
 
@@ -58,7 +58,7 @@ ORDER BY 3 DESC, 4;
 ```SQL
 SELECT [컬럼 이름], ..., RANK() OVER (ORDER BY [컬럼 이름])
 FROM [테이블 이름]
-WHERE [조건식];
+WHERE 조건식;
 ```
 
 **RANK와 비슷한 기능의 함수들**
