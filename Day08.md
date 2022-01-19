@@ -148,4 +148,6 @@ SELECT ability.number, name
 FROM ability
 LEFT JOIN mypokemon
 ON mypokemon.number = ability.number;
+
+-- 위 두 쿼리는 동일한 의미를 지닌다.
 ```
