@@ -139,6 +139,9 @@ FROM mypokemon
 LEFT JOIN ability
 ON mypokemon.number = ability.number;
 
+-- 같은 이름을 가지는 컬럼이 있다면 SELECT해 올 때,
+-- 어떤 테이블에서 합쳐진 컬럼을 가져올 것인지 명시해 줘야 한다.
+
 SELECT ability.number, name
 FROM mypokemon
 RIGHT JOIN ability
