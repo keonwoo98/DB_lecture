@@ -37,8 +37,8 @@ WHERE 조건식;
 ```SQL
 SELECT [컬럼 이름]
 FROM (SELECT [컬럼 이름]
-	  FROM [테이블 이름]
-	  WHERE 조건식) AS [테이블 별명]
+      FROM [테이블 이름]
+      WHERE 조건식) AS [테이블 별명]
 WHERE 조건식;
 ```
 
@@ -54,8 +54,8 @@ WHERE 조건식;
 SELECT [컬럼 이름]
 FROM [테이블 이름]
 WHERE [컬럼 이름][연산자](SELECT [컬럼 이름]
-					  FROM [테이블 이름]
-					  WHERE 조건식);
+                      FROM [테이블 이름]
+                      WHERE 조건식);
 ```
 
 ### **4-1. 서브 쿼리에 사용하는 연산자**
