@@ -5,7 +5,7 @@
 
 ## **1. 여러 테이블 한번에 다루기**
 
-[집합 연산 그림]
+![](https://images.velog.io/images/dogfootbirdfoot/post/bc677c08-346c-4edb-8e8a-bcefe1214b18/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202022-01-20%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%204.19.32.png)
 
 합집합 : `UNION`, `UNION ALL`
 
