@@ -34,8 +34,8 @@ GROUP BY [컬럼 이름];
 SELECT [GROUP BY 대상 컬럼 이름], ..., [그룹 함수]
 FROM [테이블 이름]
 WHERE 조건식
-GROUP BY [컬럼 이름];
-HAVING 조건식
+GROUP BY [컬럼 이름]
+HAVING 조건식;
 ```
 
 ## **3. 그룹 함수**
@@ -52,8 +52,8 @@ HAVING 조건식
 ```SQL
 SELECT [GROUP BY 대상 컬럼 이름], ..., COUNT([컬럼 이름])
 FROM [테이블 이름]
-GROUP BY [컬럼 이름];
-HAVING 조건문
+GROUP BY [컬럼 이름]
+HAVING 조건문;
 ```
 
 **`SUM`**
@@ -66,8 +66,8 @@ HAVING 조건문
 ```SQL
 SELECT [GROUP BY 대상 컬럼 이름], ..., SUM([컬럼 이름])
 FROM [테이블 이름]
-GROUP BY [컬럼 이름];
-HAVING 조건문
+GROUP BY [컬럼 이름]
+HAVING 조건문;
 ```
 
 **`AVG`**
@@ -80,8 +80,8 @@ HAVING 조건문
 ```SQL
 SELECT [GROUP BY 대상 컬럼 이름], ..., AVG([컬럼 이름])
 FROM [테이블 이름]
-GROUP BY [컬럼 이름];
-HAVING 조건문
+GROUP BY [컬럼 이름]
+HAVING 조건문;
 ```
 
 **`MIN`**
@@ -94,8 +94,8 @@ HAVING 조건문
 ```SQL
 SELECT [GROUP BY 대상 컬럼 이름], ..., MIN([컬럼 이름])
 FROM [테이블 이름]
-GROUP BY [컬럼 이름];
-HAVING 조건문
+GROUP BY [컬럼 이름]
+HAVING 조건문;
 ```
 
 **`MAX`**
@@ -108,8 +108,8 @@ HAVING 조건문
 ```SQL
 SELECT [GROUP BY 대상 컬럼 이름], ..., MAX([컬럼 이름])
 FROM [테이블 이름]
-GROUP BY [컬럼 이름];
-HAVING 조건문
+GROUP BY [컬럼 이름]
+HAVING 조건문;
 ```
 
 ## **4. 쿼리 실행 순서**
