@@ -2,10 +2,10 @@
 
 SELECT day_of_week_at, hour_at, ROUND(AVG(revenue), 0)
 FROM (
-	SELECT	DATE_FORMAT(purchased_at - INTERVAL 9 HOUR, '%Y-%m-%d') as date_at,
-			DATE_FORMAT(purchased_at - INTERVAL 9 HOUR, '%W') as day_of_week_at,
-			DATE_FORMAT(purchased_at - INTERVAL 9 HOUR, '%H') as hour_at,
-			SUM(price) as revenue
+	SELECT	DATE_FORMAT(purchased_at - INTERVAL 9 HOUR, '%Y-%m-%d') AS date_at,
+			DATE_FORMAT(purchased_at - INTERVAL 9 HOUR, '%W') AS day_of_week_at,
+			DATE_FORMAT(purchased_at - INTERVAL 9 HOUR, '%H') AS hour_at,
+			SUM(price) AS revenue
 	FROM fastcampus.tbl_purchase
 	WHERE purchased_at >= '2020-07-01'
 	AND purchased_at < '2020-08-01'

@@ -2,10 +2,10 @@
 
 SELECT day_of_week_at, hour_at, ROUND(AVG(visit), 0)
 FROM (
-	SELECT	DATE_FORMAT(visited_at - INTERVAL 9 HOUR, '%Y-%m-%d') as date_at,
-			DATE_FORMAT(visited_at - INTERVAL 9 HOUR, '%W') as day_of_week_at,
-			DATE_FORMAT(visited_at - INTERVAL 9 HOUR, '%H') as hour_at,
-			COUNT(DISTINCT customer_id) as visit
+	SELECT	DATE_FORMAT(visited_at - INTERVAL 9 HOUR, '%Y-%m-%d') AS date_at,
+			DATE_FORMAT(visited_at - INTERVAL 9 HOUR, '%W') AS day_of_week_at,
+			DATE_FORMAT(visited_at - INTERVAL 9 HOUR, '%H') AS hour_at,
+			COUNT(DISTINCT customer_id) AS visit
 	FROM fastcampus.tbl_visit
 	WHERE visited_at >= '2020-07-01'
 	AND visited_at < '2020-08-01'

@@ -2,7 +2,7 @@
 
 SELECT ROUND(AVG(revenue), 0)
 FROM (
-	SELECT DATE_FORMAT(purchased_at - INTERVAL 9 HOUR, '%Y-%m-%d') as date_at, SUM(price) as revenue
+	SELECT DATE_FORMAT(purchased_at - INTERVAL 9 HOUR, '%Y-%m-%d') AS date_at, SUM(price) AS revenue
 	FROM fastcampus.tbl_purchase
 	WHERE purchased_at >= '2020-07-01'
 	AND purchased_at < '2020-08-01'
@@ -14,7 +14,7 @@ FROM (
 
 SELECT ROUND(AVG(revenue), 0)
 FROM (
-	SELECT SUM(price) as revenue
+	SELECT SUM(price) AS revenue
     FROM fastcampus.tbl_purchase
     WHERE purchased_at >= '2020-07-01'
     AND purchased_at < '2020-08-01'

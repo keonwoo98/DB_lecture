@@ -13,7 +13,7 @@ FROM (
 
 SELECT ROUND(AVG(users), 0)
 FROM (
-	SELECT DATE_FORMAT(visited_at - INTERVAL 9 HOUR, '%Y-%m-%U') as date_at, COUNT(DISTINCT customer_id) as users
+	SELECT DATE_FORMAT(visited_at - INTERVAL 9 HOUR, '%Y-%m-%U') AS date_at, COUNT(DISTINCT customer_id) as users
 	FROM fastcampus.tbl_visit
 	WHERE visited_at >= '2020-07-05'
 	AND visited_at < '2020-07-26'
